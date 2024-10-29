@@ -1,7 +1,9 @@
+package buoi3;
+
 import java.util.Scanner;
 
-public class Demo {
-    // Bai 1
+public class HoangVanNam95755 {
+
     public static void printFunction(int id, String name, String dob, int age, boolean sex, String classes, String major, String adress) {
         System.out.println("ID: " + id);
         System.out.println("Ten: " + name);
@@ -13,39 +15,37 @@ public class Demo {
         System.out.println("Dia chi: " + adress);
     }
 
-    // Bai 2
-    public static void printFunction_002() {
+    public static void printFromKeyboard() {
         Scanner scanner = new Scanner(System.in);
 
-        // Nhập các thông tin từ bàn phím
-        System.out.print("Nhập ID: ");
+        System.out.print("Nhap ID: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Dòng này để tránh bị lỗi khi đọc chuỗi sau số nguyên
+        scanner.nextLine(); 
 
-        System.out.print("Nhập tên: ");
+        System.out.print("Nhap ten: ");
         String name = scanner.nextLine();
 
-        System.out.print("Nhập ngày sinh (dd/mm/yyyy): ");
+        System.out.print("Nhap ngay sinh (dd/mm/yyyy): ");
         String dob = scanner.nextLine();
 
-        System.out.print("Nhập tuổi: ");
+        System.out.print("Nhap tuoi: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // Tránh lỗi đọc chuỗi tiếp theo
+        scanner.nextLine(); 
 
-        System.out.print("Nhập giới tính (true = Nam, false = Nữ): ");
+        System.out.print("Nhap gioi tinh (true = Nam, false = Nữ): ");
         boolean sex = scanner.nextBoolean();
-        scanner.nextLine(); // Tránh lỗi đọc chuỗi tiếp theo
+        scanner.nextLine(); 
 
-        System.out.print("Nhập lớp: ");
+        System.out.print("Nhap lop: ");
         String classes = scanner.nextLine();
 
-        System.out.print("Nhập khoa: ");
+        System.out.print("Nhap khoa: ");
         String major = scanner.nextLine();
 
-        System.out.print("Nhập địa chỉ: ");
+        System.out.print("Nhap dia chi: ");
         String address = scanner.nextLine();
 
-        // In thông tin ra màn hình
+
         System.out.println("\n--- Thong tin vua nhap ---");
         System.out.println("ID: " + id);
         System.out.println("Ten: " + name);
@@ -62,6 +62,6 @@ public class Demo {
 
     public static void main(String[] args) {
         printFunction(95755, "Nam", "29/01/2003", 21, true, "AI21A1A", "AI", "Da Nang");
-        // printFunction_002();
+        printFromKeyboard();
     }
 }
